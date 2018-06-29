@@ -1,0 +1,57 @@
+1.
+   (a) Describe an exhaustive solution, and analyze compleixty (might be exponential).
+   A(0) = 0
+	A(Y) = max { A(Y - 1), max { pj +A(Y - wj) | wj ≤ Y } }
+   O(nw)
+   (b) Describe a greedy solution, and analyze complexity.
+   complexity is O(n)
+   (c) Show a counterexample to the greedy solution.
+   if A(2,4) B(5, 9) it will lead a wrong answer
+   (d) Theoretically, is the top-down solution faster, or the bottom-one one faster?
+   (e) Empirically, which one is faster? (Try some long random lists) 
+
+
+2.
+   (a) Describe an exhaustive solution, and analyze compleixty (might be exponential).
+   O(nw)
+   (b) Describe a greedy solution, and analyze complexity.
+   O(nw) 
+   (c) Show a counterexample to the greedy solution.
+   (d) Theoretically, is the top-down solution faster, or the bottom-one one faster?
+   (e) Empirically, which one is faster? (Try some long random lists) 
+
+
+3.
+   (a) Describe an exhaustive solution, and analyze compleixty (might be exponential).
+   (b) Describe a greedy solution, and analyze complexity.
+   (c) Show a counterexample to the greedy solution.
+   (d) Theoretically, is the top-down solution faster, or the bottom-one one faster?
+   (e) Empirically, which one is faster? (Try some long random lists) 
+
+
+
+0. What's your name?
+
+Xiao Tan 
+1. Approximately how many hours did you spend on this assignment?
+
+
+20 hours 
+
+2. Would you rate it as easy, moderate, or difficult?
+difficult
+
+3. Did you work on it mostly alone, or mostly with other people?
+
+mostly alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+
+30%
+
+5. Which part(s) of the course you like the most so far?
+
+lecture is very good.
+
+6. Which part(s) of the course you dislike the most so far?
+
+This homework is so difficult, we just finish our two midterm, and didn't have enough time to do this homework.

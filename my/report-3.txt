@@ -1,0 +1,59 @@
+0. There are two methods for building a heap from an unsorted array:
+   (1) insert each element into the heap  --- O(nlogn)
+   (2) heapify (top-down)                 --- O(n)
+
+   (a) (theoretically) Derive their time complexities.
+   						Because binary heap tree insert coplexity is O(logn), and they have n nodes to insert, so it is O(nlogn)
+   						For heapify, it compares each Kth node's children, choose the largest one. this processes will do the maxinum are (h-k) layers,and do 2*(h-k) comparisons. kth layer have 2^k nodes, so in kth layer will do 2*(h-k)*2^(k+1) comparsions. So after calculate the sum, it would be O(n)
+
+   (b) (empirically)   Use a long list of random numbers to show the difference in time.
+       		       What about sorted or reversely-sorted numbers?
+
+       		       I tried this in a random numbers in these two methods. It shows a heapify is a little bit faster.
+       		       however, in a sorted list, build-heap will be faster, because it already sorted.for reversely-sorted they're almost the same, heapify may faster. I tested them in "cmptime.py", I have uploaded it.
+
+1.
+ Q: What are the time complexities of these algorithms? 
+ for each algorithms, (a) would be O(n^2logn), it take O(n^2) to enumerate pairs, and O(nlogn) to sort
+ (b)will be O(n^2), it also take O(n^2) to enumerate pairs, but only cost O(n) to do qselect.
+ (c)this algorithms will be O(nlogn). 
+
+ 2.
+ Q: What is the complexity? 
+ It is O((k^2)*n) 
+ There are k sorted arrays, so total is kn elements. take first element of each array and do comparison. so it need to do k comparisons. so total is k*kn which is O((k^2)n)
+
+ 3.
+ Q: What is your complexity?
+ O(nlogk) build heap O(klogk) and bubble-up go through O(nlogk)
+ so it is o(nlogk)
+
+
+
+Debriefing (required!): --------------------------
+
+1. Approximately how many hours did you spend on this assignment?
+
+15 hours
+
+2. Would you rate it as easy, moderate, or difficult?
+
+difficult
+
+3. Did you work on it mostly alone, or mostly with other people?
+
+mostly alone, but ask others sometimes
+
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+
+60%
+
+5. Which part(s) of the course you like the most so far?
+
+I like teacher's lecture, he taught us a lot, and I can understand clearly.
+And homework only grade one of those questions is very good, because some of them are hard to figure out how to implement sometimes, 
+I took time to think, but still don't know how to implement.
+
+6. Which part(s) of the course you dislike the most so far?
+
+There is no doubt that quizzes are most unlikable. It may not very hard, but it's difficult to finish in a short time, maybe we could that like CS550, which do the online quizzes.

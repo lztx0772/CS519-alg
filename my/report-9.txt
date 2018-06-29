@@ -1,0 +1,33 @@
+0. 
+(a) Describe a greedy algorithm for LIS and show a counter example.
+greedy: Choose the smallest element, then put in the result array. then always choose the smallest in the array after the previous element putting the array.
+counter example: 9 2 3 4 -1  if we use greedy the lenth will be only 1.
+
+(b) Describe an exhaustive algorithm for TSP and analyze complexity.
+	we try every possibility of v1-vn nodes, like v0 to v1-vn, there is n-1 possibilities, then there are still n-2 possibilities. so in the end there are (n-1)*(n-2)...1=(n-1)!. So it is cost O(n!) complexity.
+
+1. Q: What are the time and space complexities?
+Time complexity is O(n^2) and space O(n), because my program use two loops to search the sequences. space complexity is O(n). Because I need to maintain a array to count the length of each charater.
+
+2.Write the subproblem definition, recurrence relation, and space/time complexities in report.txt.
+
+definition:d(i, V) shortest path for Vertex i from Vertex set V
+recurrence relation:d(i, V)=| Cis  V=empty,i!=s
+							| min(Cik+d(k, V-{k}))  V!=empty
+space complexities:O(2^V*V)
+time complexities:O(2^V*V^2)
+
+0. What's your name?
+Xiao Tan
+1. Approximately how many hours did you spend on this assignment?
+6 hours
+2. Would you rate it as easy, moderate, or difficult?
+moderate
+3. Did you work on it mostly alone, or mostly with other people?
+mostly alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+70%
+5. Which part(s) of the course you like the most so far?
+I like the lecture part, it is very detailed.
+6. Which part(s) of the course you dislike the most so far?
+Since there is no quizzes, it's good so far. 

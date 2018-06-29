@@ -1,0 +1,16 @@
+Xiao Tan
+quiz1
+
+1. 
+input permutation:
+worst-case:1,2,4,6,7,8,9
+best-case:6,2,1,4,8,7,9
+
+2.
+time complexity:
+worst-case:O(logn)
+best-case:O(1)
+
+3.
+false, because when we can't use binary search in linked-list, because we still need cost O(n) time to reach that node in linked-list, so it couldn't reduce time complexity.
+

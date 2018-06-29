@@ -1,0 +1,27 @@
+1(a)
+O(klogk+nlogk). At first we build a heap, use klogk time, then we get n elements from the heap, use nlogk time.so the total time complexity is O(klogk+nlogk)
+
+1(b)
+The first method is build a n size max heap, so we only need to compare with the top element, reduce the compare time.
+And another method is use heapify to make a heap, it can reduce the O(klogk) to O(k).
+
+2
+O(nw), I make a table which contain routes that make amount reduce to 0. so it is O(nw)
+
+
+0. What's your name?
+	Xiao Tan
+1. Approximately how many hours did you spend on this assignment?
+	6 hours
+2. Would you rate it as easy, moderate, or difficult?
+	moderate
+3. Did you work on it mostly alone, or mostly with other people?
+	mostly alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+	70%
+
+[NEW QUESTIONS]
+5. Did you like the Midterm? If not, which part(s) do you dislike the most?
+	No, I don't like Midterm. filling in the programs are the parts I don't like, There are thousand of methods to implement the problems, it is really hard to know what to write on the paper.
+6. Do you feel this HW (as a second-chance to midterm or as a take-home quiz) is helpful?
+	yes, it is. I am not that strong to come up with an algorithm immediertly, it is really confused sometimes, I need to test my code to make my answer right.

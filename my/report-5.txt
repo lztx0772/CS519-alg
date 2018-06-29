@@ -1,0 +1,44 @@
+0. Compare two recursive implementations of fib (naive vs. memoized).
+   (a) What's exact complexity of naive in theory?
+   (b) Let's say you know it's O(a^n); can you curve-fit to determine the approximate value of a?
+   (c) Does this value match the theoretical complexity?
+
+(a) for naive it is O(n) complexity
+	for memoized, it's O(((1+√5)/2)^n) 
+(b) after using the gnuplot, the result of approximate value is 1.39
+
+(c) almost fit the theoretical complexity.
+
+
+1. complexity of top-down (max_wis()) and bottom-up (max_wis2()) solutions are O(n)
+
+
+2.  What's the complexity of this DP?
+   O(n^2)
+
+   What's the name of this famous number series?
+   Catalan number
+
+
+
+0. What's your name?
+Xiao Tan
+
+1. Approximately how many hours did you spend on this assignment?
+8 hours 
+
+2. Would you rate it as easy, moderate, or difficult?
+moderate
+
+3. Did you work on it mostly alone, or mostly with other people?
+mostly alone
+
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+80%
+
+5. Which part(s) of the course you like the most so far?
+I like the lecture, and the discussions in canvas are very useful.
+And I perfer professor to give us more tips about how to compute complexity.
+
+6. Which part(s) of the course you dislike the most so far?
+Always the quizzes, and exams.

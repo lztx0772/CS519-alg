@@ -1,0 +1,47 @@
+Xiao Tan
+midterm
+
+2.
+(1) binary search on a tree need to decide go left child or right child
+(2) it still cost O(logn) to do swap
+
+5. 
+(a) O(a^n)
+(b)
+def fib(n, cache = {0:1, 1:1}):
+	if n in cache:
+		return cache[n]
+	cache[n] = fib(n-1, cache)+fib(n-2, cache)
+	return cache[n]
+
+time:O(n)  
+
+(c)
+time:O(n)
+
+(d)
+both of them are dynamic programming
+
+6.
+(c)
+dp(0)=0
+dp(x)=min{	x 
+			dp(x-vi)+1  if x-vi >=0 for i=1...n-1}
+(d)
+space:O(x)
+time:O(nx)
+(e)
+dp(x,n):
+smallest number of types of coins needed considering first m type of cons only
+
+(f)
+dp(x, i+1) = min{	dp(x, i) if x=0
+					dp(x-j*vi, i) + 1   for j=0,1...
+										x-j*vi>0
+}
+dp(x, 0) = Inf (x>0)
+dp(0, m) = 0
+
+(g)
+space:O(nx)
+time:O(nx)

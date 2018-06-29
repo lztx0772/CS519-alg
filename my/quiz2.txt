@@ -1,0 +1,32 @@
+Xiao Tan
+quiz2
+
+1.
+by using balanced BST
+
+2.
+(a) amotized O(1)
+(c) amotized O(1)
+(e) amotized O(1)
+(f) O(n)
+
+3.
+mid = [x for x in a if x == pivot]
+right = [x for x in a if x > pivot]
+
+5.
+best-case: O(logn)
+worst-case: O(n)
+
+
+if t == []:
+	return best
+left, root, right = t
+
+if best == None or abs(root - x) < abs(best -x):
+	best = root
+
+if x < root:
+	return find(left, x, best)
+
+return find(right, x ,best)

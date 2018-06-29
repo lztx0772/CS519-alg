@@ -1,0 +1,39 @@
+﻿Xiao Tan
+932-669-816
+tanx2@oregonstate.edu
+
+0. Q: What's the best-case, worst-case, and average-case time complexities of quicksort.Briefly explain each case.
+	best-case and average-case O(nlogn)
+	When the pivots always get nearly the middle of the list, which means each recursive call processes a list of half the size.we can make only logn nested calls before we reach a list of size 1. And each level of calls needs only O(n) time all together. So the result is O(nlogn)
+
+	worst-case  O(n^2)
+	The worst-case may happen when the pivot is the smallest or largest element in the list. It makes n-1 nested calls before we reach a list of size 1. This means that the call tree is a linear chain of n−1 nested calls. The ith call does O(n−i) work to do the partition, after calculating the sum we can know the cmplexity is O(n^2).
+1. Q: What's the best-case, worst-case, and average-case time complexities? Briefly explain.
+	best-case and average-case O(n)
+	In quickselect, it is similar to quicksort, but we only do recurses into one side. So it can reduces the complexity from O(nlogn) to O(n).
+
+	worst-case O(n^2)
+	For this case, it happen becasue the work only happen in one side. so the complexity is the same as quicksort.
+
+2. Q: What are the time complexities for the operations implemented?
+	sorted O(n)
+	The only thing this operation do is do infix traversal, so its time complexity is O(n)
+
+	_search average-case O(logn), worst-case O(n)
+	Becasue it like a binary search, so it's complexity is O(logn), but the different is if all the elements are on the left, may need to go through all the elements.
+
+	search and insert O(logn)
+	Beacuse these two operations are based on _search. So they are the same.
+
+
+Debriefing:
+1. Approximately how many hours did you spend on this assignment?
+	6 hours
+2. Would you rate it as easy, moderate, or difficult?
+	moderate
+3. Did you work on it mostly alone, or mostly with other people?
+	mostly alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+	90%
+5. Any other comments?
+	This difficulty is very good. 

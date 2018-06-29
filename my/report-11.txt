@@ -1,0 +1,34 @@
+***Please analyze time/space complexities for each problem in report.txt.
+   [UPDATE] Also explain the algorithm of each question you solved.
+   1.I use N^2 default dict to store data, and each step I need to try every elements, so it cost O(n^3) time complexity. and cost O(n^2) space complexity.
+   base case in this question is opt[i,i] = 0 and opt[i,i+1]=0
+   then use the recurrence function is 
+   opt[0, n] = max(opt[i+1,j-1]+1 while i and j-1 could pair,
+   					opt[i,k]+opt[k,j], i<k<j)
+
+   I use recurrence to split the problem into [i,k] and [k,j], so I just need to solve this problem from a single element and get the optimal answer in each step, then expand to the origin question and get the answer.
+
+   2. In this question, I also use O(n^2) space to store answers. and I may need O(n) time to run each step, so time complexity is O(n^3)
+   Init every element in 1, because there is an empty structure at least. 
+   opt[i,j]=opt[i+1,j+sum(opt[i+1,k-1]*opt[k,j]) use this equation to solve this problem. There are 2 case in each problem
+   (1)i unpaired to elements, then get the opt[i+1, j]
+   (2)i can pair to k-1th element, so calculate the sum that sum(opt[i+1,k-1]*opt[k,j]) use this method to get the result.
+
+
+   3.
+   have no idea how to do that.
+   
+0. What's your name?
+Xiao Tan
+1. Approximately how many hours did you spend on this assignment?
+20 hours
+2. Would you rate it as easy, moderate, or difficult?
+difficult
+3. Did you work on it mostly alone, or mostly with other people?
+mostly alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+50%
+5. Which part(s) of the course you like the most so far?
+I like that I can learn something from this class
+6. Which part(s) of the course you dislike the most so far?
+However, it's really difficult for me, sometimes, If I can't understand the algorithm clearly, I can do nothing on assignment.
